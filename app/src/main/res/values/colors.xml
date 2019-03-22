@@ -3,4 +3,18 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="black_text">#363b5f</color>
+    <color name="hint_text">#b5b8c9</color>
+    <color name="white">#ffffff</color>
+    <color name="stroke">#d1d2d8</color>
+    <color name="bg_login">#679cfc</color>
+    <color name="light_gray">#88899d</color>
+    <color name="text01">#363b4f</color>
+    <color name="light_gray02">#cbcbcb</color>
+    <color name="btn_bg_deep_red">#F6460D</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+
+    <color name="CTASDKBackgroundColor">#F9F9F9</color>
+
 </resources>

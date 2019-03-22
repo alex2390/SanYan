@@ -1,21 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.soubu.test.sanyan">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/shanyan_sdk_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/shanyan_sdk_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".view.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+
+        <!--****************************联通****************************-->
+    <activity
+        android:name="com.sdk.mobile.ui.OauthActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:launchMode="singleTop"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="com.sdk.base.module.permission.PermissionActivity"
+        android:launchMode="singleTop"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+    <!--************************移动********************************-->
+    <activity
+        android:name="com.cmic.sso.sdk.activity.OAuthActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:launchMode="singleTop"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.cmic.sso.sdk.activity.LoginAuthActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:launchMode="singleTop"
+        android:screenOrientation="portrait" />
+    <!--******************************电信***********************-->
+    <activity
+        android:name="com.chuanglan.shanyan_sdk.view.ShanYanOneKeyActivity"
+        android:launchMode="singleTop"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.chuanglan.shanyan_sdk.view.CTCCPrivacyProtocolActivity"
+        android:screenOrientation="portrait" />
+</application>
 
 </manifest>
