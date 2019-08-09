@@ -35,12 +35,12 @@ public class MyApplication extends Application {
     //必须在init（）方法之前设置
     private void initAuthenticationLogo() {
          /*****************************************电信设置授权页logo方法************************************************/
-        OneKeyLoginManager.getInstance().setCTCCImgLogo(R.mipmap.oauth_logo);
+        OneKeyLoginManager.getInstance().setCTCCImgLogo(R.drawable.oauth_logo);
 
         /*****************************************移动设置授权页logo方法************************************************/
         OneKeyLoginManager.getInstance().setCMCCImgLogo("oauth_logo");
         /*****************************************联通设置授权页logo方法************************************************/
-        OneKeyLoginManager.getInstance().setCUCCImgLogo(R.mipmap.oauth_logo);
+        OneKeyLoginManager.getInstance().setCUCCImgLogo(R.drawable.oauth_logo);
         /*****************************************一键登录页面左上角帮助按钮 是否显示***********************************/
         OneKeyLoginManager.getInstance().setShowHelpBtn(true);
         /*****************************************一键登录页面其他方式登录按钮 是否显示*********************************/

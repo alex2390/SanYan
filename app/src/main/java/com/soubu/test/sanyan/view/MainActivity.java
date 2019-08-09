@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -31,6 +32,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends Activity {
+    private static final String TAG = "MainActivity";
     private ImageView iv_flash;
     private LoadingDialog dialog;
     private RequestExample example = new RequestExample();
@@ -144,6 +146,7 @@ public class MainActivity extends Activity {
                 try {
                     String response_data = new String(response.body().bytes());
                     JSONObject json = new JSONObject(response_data);
+                    Log.d(TAG, "onResponse: "+json);
                     int code = json.optInt("code");
                     if (code == 200000) {
                         JSONObject data = json.getJSONObject("data");
