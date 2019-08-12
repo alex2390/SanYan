@@ -34,7 +34,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/btn_bg_blue"
+
         android:onClick="doClick"
         android:text="立即体验"
         android:textColor="@color/white" />

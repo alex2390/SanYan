@@ -9,6 +9,10 @@ android {
         versionCode 1
         versionName "1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置bugly支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
     }
     buildTypes {
         release {
@@ -31,7 +35,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     //闪验SDK
-    api(name: 'shanyan_sdk_v2.0.7A', ext: 'aar')
+    api(name: 'shanyan_sdk_v2.2.1', ext: 'aar')
     //retrofit
     api 'com.squareup.retrofit2:retrofit:2.3.0'
     //okhttp

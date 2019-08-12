@@ -21,6 +21,16 @@
     <string name="umcsdk_grey">  灰度</string>
     <string name="umcsdk_product">  现网</string>
 
+    <string name="sdktitle">shanyan sdk v2.2.1 demo</string>
+    <string name="sdkinit">sdk  初 始 化</string>
+    <string name="preInitNum">sdk 预 取 号</string>
+    <string name="authpage">拉 起 授 权 页</string>
+    <string name="displacePhone">置 换 手 机 号</string>
+    <string name="normal_mode">弹窗模式</string>
+    <string name="chenjinshi">沉浸式模式</string>
+    <string name="debug_mode">调试模式</string>
+    <string name="modetitle">调试模式</string>
+
     <!--AndPermission-->
     <string name="setting">设置</string>
     <string name="resume">继续</string>
@@ -42,4 +52,7 @@
     <string name="message_permission_rationale">同意以下权限才能使用相应功能</string>
     <string name="message_permission_always_failed">此项功能需要这些权限，请在设置中开启</string>
     <string name="permission_setting">权限设置</string>
+
+
+
 </resources>
